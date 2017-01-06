@@ -21,11 +21,16 @@ function textValidation(id,location,msg,divlocation)
 			display(msg,location,"red",divlocation);
 			return false;
 		}
+		else
+			{
+			$("#"+location).html("");
+			}
+	
 }
 function ageValidation(id,location,divlocation) 
 {
 	var date=document.getElementById(id).value;
-	alert(date);
+	
 	var cd=new Date();
 	var d=new Date(date);
 	var cyear=cd.getFullYear();

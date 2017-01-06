@@ -6,62 +6,104 @@
 <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 <script type="text/javascript" src="jquery/jquery-3.1.1.slim.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+.bb
+{
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+</style>
 </head>
-<body>
-<div class="class-fluid">
+<body style="background: linear-gradient(#fefefe, #bfbfbf); background-repeat: no-repeat;">
+<div class="content-fluid">
+<!-- 	row for login -->
 	<div class="row">
-		<div class=" col-lg-3 col-md-4   col-sm-12  col-xs-12" style="background-color: blue; height: 100px;">
-			<div class="row"> 
-				<div class="col-md-2 col-lg-2   col-sm-5  col-xs-3" style="background-color: blue;"></div>
-				<div class="col-md-8 col-lg-8   col-sm-7  col-xs-6" style="background-color: blue; margin-top: 20px;">
+		<div class=" col-lg-3 col-md-4   col-sm-12  col-xs-12 text-center" style="background-color: #3b5998; height: 100px;">
+			<div style="margin-top: 17px" >
 					<font size="7" color="white" ><b>facebook</b></font>
-				</div>
-				<div class="col-md-2 col-lg-2   col-sm-0  col-xs-3" style="background-color: blue;"></div>
 			</div>
 		</div>
-		<div class=" col-lg-3 hidden-md  hidden-sm hidden-xs" style="background-color: blue; height: 100px;">
+		
+		<div class=" col-lg-3 col-md-1  hidden-sm hidden-xs" style="background-color: #3b5998; height: 100px;">
 		
 		</div>
-		<div class=" col-lg-6 col-md-8    hidden-sm  hidden-xs" style="background-color: blue; height: 100px;">
-			 <div style="margin-top: 20px;">
-				<form name="login" action="home.html" method="get">
-				<input type="text" name="name" />
-				<input type="password" name="name"/>
-				<input type="button" name="name" value="Login"  />
+<!-- 		login form for lg,md device -->
+		<div class=" col-lg-6 col-md-7    hidden-sm  hidden-xs" style="background-color: #3b5998; height: 100px;">
+			 <div style="margin-top: 40px;">
+				<form name="login" action="home.html" method="get" class="form-inline">
+				<div class="form-group">
+					<div class="col-lg-5 col-md-5 ">
+					<input type="text" name="name" />
+					</div>
+					<div class="col-lg-5 col-md-5 ">
+					<input type="password" name="name"/>
+					</div>
+					<div class="col-lg-2 col-md-2 ">
+						<input type="button" name="name" value="Login"  />
+					</div>
+				</div>
 				</form>
 			</div>
 		</div>
-		<div class="hidden-lg hidden-md    col-sm-12  col-xs-12" style="background-color: white; height: 50px;">
+<!-- 		login form for xs,sm device -->
+		<div class=" hidden-lg hidden-md    col-sm-12 col-xs-12" style=" top:50px; ">
+			<form action="" >
+			<div class=" col-xs-12 " >
+				<input type="text" class="form-control" name="name" placeholder="Email ID or Phone Number" />
+				<input type="password" class="form-control" name="name" placeholder="Password"/>
+			</div>
+			<div class=" col-xs-12" style="  top:20px;">
+				<input type="button" class="btn btn-primary btn-block" name="name" value="Login"  />
+			</div>
+			</form>
 		</div>
-		<div class="hidden-lg hidden-md    col-sm-12  col-xs-12" style="background-color: white; height: 50px;">
-			<div class="hidden-lg hidden-md    col-sm-3  col-xs-4" style="background-color: white; ">
-			</div>
-			<div class="hidden-lg hidden-md    col-sm-6  col-xs-4" style="background-color: white;">
-			<input type="text" name="name" style="width: 500px;" />
-			</div>
-			<div class="hidden-lg hidden-md    col-sm-3  col-xs-4" style="background-color: white; ">
-			</div>
 		
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-5   hidden-sm  hidden-xs "  >
+			<div class="bb col-lg-12 col-md-12">
+				Facebook helps you connect and share with the people in your life.
+			</div>
+			<img alt="" src="images/world.png" class="img-responsive " style="width: 100%; height: 100%"/>
 		</div>
-		<div class="hidden-lg hidden-md    col-sm-12  col-xs-12" style="background-color: white; height: 50px;">
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-4" style="background-color: white; ">
-			</div>
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-4" style="background-color: white;">
-			<input type="password" name="name"/>
-			</div>
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-4" style="background-color: white; ">
-			</div>
+		
+		<div class=" col-lg-6 col-md-6   hidden-sm  hidden-xs " >
+			<h2 class="text-center">Sign UP</h2>
+			<form action="" class="form-horizontal">
+				<div class=" col-lg-4 col-md-4  form-group"  >
+					<input type="text"  placeholder="First Name" id="fname"  name="fname" class="form-control " />
+				</div>
+				<div class="col-lg-5   col-md-5    form-group" style="margin-left: 20px "   >	
+					<input type="text"  placeholder="Last Name" id="lname" name="lname" class="form-control " style="float: right;"/>
+				</div>
+				<div class="col-lg-8 col-md-8 form-group">
+					<input type="text"  placeholder="Mobile number or email address"  id="mobile" name="mobile" class="form-control "/>
+				</div>
+				<div class="col-lg-8 col-md-8 form-group">
+					<input type="text"   placeholder="Re-enter mobile number or email address" name="email" id="email" class="form-control "/>
+				</div>
+				<div class="col-lg-8 col-md-8 form-group">
+					<input type="text"  placeholder="Password" name="password" id="password" class="form-control "/>
+				</div>
+				<div class="col-lg-10 col-md-10">
+					<font size="1">By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy, Including our Cookie Use.</font><br><br>
+				</div>
+				<div class="col-lg-5 col-md-5">
+					<input type="button" class="btn btn-success " value="Sign Up Now!"/>
+				</div>
+			</form>
 		</div>
-		<div class="hidden-lg hidden-md    col-sm-12  col-xs-12" style="background-color: white; height: 50px;">
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-5" style="background-color: white; ">
+		
+		<div class="hidden-lg hidden-md  col-sm-12 col-md-12   "  >
+		<div class="col-xs-offset-2 col-xs-8 col-xs-offset-2" style=" top:100px;">
+				<input type="button" class="btn btn-success btn-block" name="name" value="Create New Account"  />
 			</div>
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-2" style="background-color: white;">
-			<input type="button" name="name" value="Login"  />
-			</div>
-			<div class="hidden-lg hidden-md    col-sm-4  col-xs-5" style="background-color: white; ">
-			</div>
-		</div>
-		<div class="hidden-lg hidden-md    hidden-sm  hidden-xs" style="background-color: blue; height: 100px;">
 		</div>
 	</div>
 </div>

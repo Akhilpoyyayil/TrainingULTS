@@ -3,20 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<script type="text/javascript" src="javascript/Validation.js"></script>
-<script type="text/javascript">
-function logval() 
-{
-	
-	var Name=document.getElementById("name").value;
-	if(Name=="")
-		{
-		alert(name);
-		document.getElementById("name").style.placeholder="shbc";
-		document.getElementById("nameVal").style.color=color;
-		}
-}
-</script>
+<!-- <script type="text/javascript" src="javascript/Validation.js"></script> -->
+
 </head>
 <body style="width: 100%; height: 100%">
 <div style="width: 100%; height: 700px; background-color: yellow;"  id="maindiv" >
@@ -29,7 +17,7 @@ function logval()
 			<form name="login" action="home.html" method="get">
 			<input type="text" name="name" id="name"/>
 			<input type="password" name="password" id="password"/>
-			<input type="button"  value="Login" onclick="valLogin();" />
+			<input type="button" id="btn-log" value="Login" onclick="valLogin();" />
 			</form>
 		</div>
 	</div>
@@ -41,15 +29,15 @@ function logval()
 			<input type="text" style="width: 40%; height: 25px;  border-radius : 5px; border-color: #1f1f14; margin-left: 10%" placeholder="Last Name" id="lname" name="lname"/><br><br>
 			<div id="namediv" style="display: none;"><label id="fnameVal" ></label><label id="lnameVal" ></label><br></div>
 			<input type="text" style="width: 70%; height: 35px; border-radius : 5px; border-color: #1f1f14;"  placeholder="Mobile Number"  id="mobile" name="mobile"/><br><br>
-			<div id="mobilediv" style="display: none;"><label id="mobileVal" ></label><br></div>
+			<div id="mobilediv" ><label id="mobileVal" ></label><br></div>
 			<input type="text" style="width: 70%; height: 35px; border-radius : 5px; border-color: #1f1f14;"  placeholder="Email" name="email" id="email" /><br><br>
-			<div id="emaildiv" style="display: none;"><label id="emailVal" ></label><br></div>
+			<div id="emaildiv" ><label id="emailVal" ></label><br></div>
 			<input type="date" style="width: 70%; height: 35px; border-radius : 5px; border-color: #1f1f14;"  name="dob" id="dob" /><br><br>
 			<div id="dobdiv" style="display: none;"><label id="dobVal" ></label><br></div>
 			<input type="password" style="width: 70%; height: 35px; border-radius : 5px; border-color: #1f1f14;"  placeholder="Password" name="password" id="password" /><br><br>
-			<div id="passworddiv" style="display: none;"><label id="passwordVal" ></label><br></div>
+			<div id="passworddiv" style="display: none;" ><label id="passwordVal" ></label><br></div>
 			<font size="2">By clicking Sign Up, you agree to our Terms and that you have read our Data Use Policy, Including our Cookie Use.</font><br><br>
-			<input type="button"   value="Sign Up Now!" onclick="signVal();" style="border-radius : 8px; border-color: #1f1f14; background-color: #69a74e; width: 25%; height: 35px;" />
+			<input type="button" id="btn-signup"   value="Sign Up Now!" onclick="signVal();" style="border-radius : 8px; border-color: #1f1f14; background-color: #69a74e; width: 25%; height: 35px;" />
 			</form>
 		</div>
 	</div>
@@ -58,5 +46,7 @@ function logval()
 
 	</div>
 </div>
+<script type="text/javascript" src="jquery/jquery-3.1.1.slim.js"></script>
+<script type="text/javascript" src="javascript/jqvalidation.js"></script>
 </body>
 </html>
